@@ -1,3 +1,18 @@
+Proyecto realizado pensado como una pagina de venta de libros. Quedaron algunos detalles en el tema stock y precio final
+
+Todo realizado en Angular
+
+
+
+
+
+
+
+
+
+
+
+
 # Libreria
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
