@@ -1,0 +1,66 @@
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Portada</th>
+      <th>Nombre</th>
+      <th>Genero</th>
+      <th>Precio</th>
+      <th>Stock</th>
+      <th class="col-compras">Comprar</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(libro of libros; track libro.id){
+      @if(libro.clearance){
+        <tr class="clearance">
+          <td class="clearance"><img  class="img-thumbnail" [src]=libro.image [alt]=libro.nombre></td>
+          <td class="clearance">{{libro.nombre}}  OFERTA!</td>
+          <td class="clearance">{{libro.genero}}</td>
+          <td class="clearance">{{libro.precio | currency}}</td>
+          @if(libro.stock > 0){
+            <td class="clearance"class="badge text-bg-success" >{{libro.stock}}</td>
+            <td class="clearance">
+                <app-input-integer [(cantidad)] = "libro.cantidad" [max] = "libro.stock"></app-input-integer>
+                <button type="button" class="btn btn-success" (click)="addToCart(libro)">Agregar al Carrito</button>
+            </td>
+
+
+          }
+          @else {
+            <td class="clearance"class="badge text-bg-warning">Sin stock</td>
+          }
+
+        </tr>
+      }
+      @else {
+        <tr>
+          <td><img class="img-thumbnail" [src]=libro.image [alt]=libro.nombre></td>
+          <td>{{libro.nombre}}</td>
+          <td>{{libro.genero}}</td>
+          <td>{{libro.precio | currency}}</td>
+          @if(libro.stock > 0){
+            <td class="badge text-bg-success">{{libro.stock}}</td>
+            <td>
+              <app-input-integer [(cantidad)] = "libro.cantidad" [max] = "libro.stock"></app-input-integer>
+              <button type="button" class="btn btn-success" (click)="addToCart(libro)">Agregar al Carrito</button>
+            </td>
+
+          }
+          @else {
+            <td class="badge text-bg-warning">Sin stock</td>
+          }
+
+        </tr>
+      }
+
+    }
+    @empty {
+      <tr>
+        <td colspan="4"> No hay libros en stock</td>
+      </tr>
+    }
+
+
+  </tbody>
+</table>

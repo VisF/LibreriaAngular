@@ -1,0 +1,20 @@
+<p>Carrito de compras</p>
+
+<ul>
+  @for(libro of shopList$ | async; track libro.id){
+    @if(libro.cantidad>0){
+      <li>
+        Libro: {{libro.nombre}}
+        Cantidad: {{libro.cantidad}}
+      </li>
+      <button type="button" class="btn btn-success" (click)="remove(libro)">Sacar item</button>
+    }
+
+  }
+  @if(shopList$){
+    <li>
+      Total: {{total}}
+    </li>
+  }
+
+</ul>
