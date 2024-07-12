@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Proyecto de Librería Online
   Este proyecto es una aplicación web para la gestión y compra de libros en línea. La aplicación permite a los usuarios navegar por una lista de libros, agregar libros al carrito de compras, y gestionar el stock de los libros.
 
@@ -21,8 +22,7 @@ Rutas:
   /libreria: Página principal que muestra la lista de libros.
 
   /about: Página con información adicional sobre la librería.
-
-
+=======
 
 
 
