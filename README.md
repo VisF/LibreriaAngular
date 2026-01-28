@@ -1,56 +1,79 @@
-<<<<<<< HEAD
-Proyecto de Librería Online
-  Este proyecto es una aplicación web para la gestión y compra de libros en línea. La aplicación permite a los usuarios navegar por una lista de libros, agregar libros al carrito de compras, y gestionar el stock de los libros.
+# 📚 Librería Angular
 
-Estructura del Proyecto
-  Componentes Principales:
+Aplicación web de **librería online** desarrollada con **Angular**, enfocada en prácticas de desarrollo frontend moderno, componentización y manejo de estado básico.
 
-    BookListComponent: Muestra la lista de libros disponibles, incluyendo información como nombre, género, precio, stock y una opción para agregar al carrito de compras.
-    
-    InputIntegerComponent: Permite a los usuarios seleccionar la cantidad de libros que desean comprar dentro del límite del stock disponible.
+El proyecto simula una tienda de libros con carrito de compras y navegación entre vistas.
 
-    ShoppingCartComponent: Muestra los libros que han sido agregados al carrito de compras, junto con la cantidad de cada libro y el total del precio.
+---
 
-Servicios:
+## 🚀 Tecnologías utilizadas
 
-  BookCartService: Maneja la lógica del carrito de compras, incluyendo agregar y remover libros del carrito, y calcular el precio total.
+- Angular (CLI)
+- TypeScript
+- HTML5
+- CSS3
+- Diseño responsive
+- Arquitectura basada en componentes
 
-  BookUpdateService: Notifica actualizaciones en el stock de los libros a otros componentes.
+---
 
-Rutas:
+## 🧩 Funcionalidades principales
 
-  /libreria: Página principal que muestra la lista de libros.
+- 📖 Listado de libros con información de precio, género y stock
+- 🛒 Carrito de compras con manejo de cantidades
+- 🔁 Servicios Angular para lógica y estado
+- 🚦 Navegación mediante rutas
+- 🧱 Componentes reutilizables
 
-  /about: Página con información adicional sobre la librería.
-=======
+---
+
+## 🛠 Instalación y ejecución
+
+1. Clonar el repositorio:
+
+git clone https://github.com/VisF/LibreriaAngular.git
+
+2. Instalar dependencias:
+
+npm install
+
+3. Levantar el servidor de desarrollo:
+
+ng serve
+
+4. Abrir en el navegador:
+
+http://localhost:4200/
 
 
+📁 Estructura destacada del proyecto
 
+BookListComponent
+Listado principal de libros disponibles.
 
-# Libreria
+ShoppingCartComponent
+Gestión del carrito de compras.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+InputIntegerComponent
+Control reutilizable para cantidades.
 
-## Development server
+Servicios
+Manejo de la lógica de negocio y estado compartido.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+📌 Objetivos del proyecto
 
-## Code scaffolding
+Practicar Angular y TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Aplicar componentización
 
-## Build
+Separar lógica de negocio en servicios
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Desarrollar interfaces claras y reutilizables
 
-## Running unit tests
+Comprender el flujo básico de una aplicación frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+👤 Autor
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Facundo
+🔗 GitHub: https://github.com/VisF
+🔗 Linkedin: https://www.linkedin.com/in/facundo-vis/
